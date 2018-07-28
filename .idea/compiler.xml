@@ -22,6 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="api-gateway" />
         <module name="config-server" />
         <module name="eureka-server" />
         <module name="sc" />
@@ -31,9 +32,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.8" />
       <module name="config-server" target="1.8" />
+      <module name="demo" target="1.8" />
       <module name="eureka-server" target="1.8" />
-      <module name="sc" target="1.8" />
+      <module name="sc" target="1.5" />
       <module name="serice-feign" target="1.8" />
       <module name="service-hi" target="1.8" />
       <module name="service-ribbon" target="1.8" />
